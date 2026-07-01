@@ -3,58 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join Our WhatsApp Group</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome for WhatsApp Icon -->
+    <title>Join WhatsApp Group</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
 
         body {
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(135deg, #075E54 0%, #128C7E 100%);
-            color: #fff;
+            background: #f0f2f5;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
             text-align: center;
-        }
-
-        .container {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 3rem;
-            border-radius: 25px;
-            backdrop-filter: blur(15px);
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-            border: 1px solid rgba(255, 255, 255, 0.18);
             width: 90%;
-            max-width: 500px;
+            max-width: 400px;
         }
 
-        .icon {
-            font-size: 5rem;
+        .whatsapp-icon {
+            font-size: 50px;
             color: #25D366;
-            margin-bottom: 1.5rem;
-            text-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
         }
 
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        p {
-            font-size: 1rem;
-            margin-bottom: 2.5rem;
-            opacity: 0.9;
-        }
+        h2 { color: #333; margin-bottom: 10px; font-weight: 600; }
+        p { color: #666; margin-bottom: 30px; font-size: 0.9rem; }
 
         .join-btn {
             display: inline-flex;
@@ -62,35 +43,26 @@
             justify-content: center;
             background-color: #25D366;
             color: white;
-            padding: 15px 30px;
+            padding: 12px 25px;
             text-decoration: none;
-            font-size: 1.2rem;
+            font-size: 16px;
             font-weight: 600;
-            border-radius: 50px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            border-radius: 8px; /* Square corners */
+            transition: background 0.3s ease;
+            white-space: nowrap; /* Button content ek line madhe rahnyasathi */
         }
 
-        .join-btn i {
-            margin-right: 10px;
-            font-size: 1.5rem;
-        }
+        .join-btn i { margin-right: 8px; font-size: 18px; }
 
-        .join-btn:hover {
-            background-color: #128C7E;
-            transform: scale(1.05);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-        }
+        .join-btn:hover { background-color: #128C7E; }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <div class="icon">
-            <i class="fab fa-whatsapp"></i>
-        </div>
-        <h1>Join Our Community</h1>
-        <p>Stay connected and get the latest updates directly on your WhatsApp.</p>
+    <div class="card">
+        <div class="whatsapp-icon"><i class="fab fa-whatsapp"></i></div>
+        <h2>Join Our Group</h2>
+        <p>Click below to join our official WhatsApp group.</p>
         
         <a href="https://chat.whatsapp.com/K8Gew5F1nPfJv2NDPEbxwc" class="join-btn" target="_blank">
             <i class="fab fa-whatsapp"></i> Join WhatsApp Group
